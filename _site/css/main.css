@@ -548,7 +548,7 @@ body {
 /* BLOG-STYLES */
 .blog-cols {
   flex-direction: column-reverse;
-  min-height: 310vh;
+  min-height: 100vh;
 }
 .blog-posts {
   /*min-height: 100vh;*/
