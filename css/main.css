@@ -617,10 +617,10 @@ body {
     /*padding: 0em 0em 0em 0em;*/
         border-radius: 5px 5px 0px 0px;
   }
-  /*.mobile-menu-check,
+  .mobile-menu-check,
   .show-mobile-menu {
     display: none;
-  }*/
+  }
 }
 
 @media (max-width: 800px) {
@@ -700,7 +700,7 @@ body {
   padding: 0;
 }
 /*MOBILE STYLES */
-/*.show-mobile-menu {
+.show-mobile-menu {
     display: block;
     float: right;
     font-weight: bold;
@@ -717,5 +717,5 @@ body {
   }
   .mobile-menu-check:checked ~ .header-nav {
     max-height: 1000px;
-  }  */
+  }  
 }
