@@ -486,8 +486,8 @@ body {
   padding-top: 2em;
 }
   /*HEADER STYLES */
-/*  .header-nav a,
-  /*.drop-trigger {
+.header-nav a,
+  .drop-trigger {
     color: #fff;
   }
   .nav-links a,
@@ -496,8 +496,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-  }*/
-/*
+  }
   /* DROPDOWN STYLES */
 .dropdown {
   position: relative;
@@ -543,7 +542,7 @@ body {
     background-color: #fff;
   }
   .drop-menu li ~ li {
-    border-top: 1px dotted rgba(0,0,0,0.1)
+    border-top: 1px dotted rgba(0,0,0,0.1);
   }
   .drop-menu li:first-child {
     border-radius: 5px 5px 0 0;
@@ -570,13 +569,58 @@ body {
     color: #333;
   }
   /* HIDE IN THE FOOTER */
-  .footer .dropdown:hover .drop-menu,
+  /*.footer .dropdown:hover .drop-menu,
   .footer .drop-trigger:after {
     display: none;
   }
-  .footer .drop-trigger {
+  .footer .drop-trigger {*/
+    /*padding-right: 0;
+  }*/
+  footer .dropdown:hover {
+  }
+  footer .dropdown .drop-menu:hover {
+    display: block;
+  }
+  footer .dropdown {
+    position: relative;
+    white-space: normal;
+    /*display: flex;*/
+    /*flex-direction: column-reverse;*/
+  }
+  footer .dropdown .drop-menu {
+    position: absolute;
+    /*flex: initial;*/
+    bottom: 1em;
+    left: 0em;
+    right: 0em;
+    padding: 1em 0 0;
+  }
+  footer .drop-trigger {
     padding-right: 0;
   }
+  footer .dropdown ul {
+    /*direction: ltr;*/
+  }
+  footer .dropdown .drop-menu li {
+    box-sizing: border-box;
+    white-space: normal;
+    /*padding: 0em -1em -1em;*/
+    margin: 0 0 0 0;
+    /*width: auto;*/
+
+  }
+  footer .drop-menu li:last-child {
+    /*padding: 0em 0em 0em 0em;*/
+        border-radius: 0px 0px 5px 5px;
+  }
+  footer .drop-menu li:first-child {
+    /*padding: 0em 0em 0em 0em;*/
+        border-radius: 5px 5px 0px 0px;
+  }
+  /*.mobile-menu-check,
+  .show-mobile-menu {
+    display: none;
+  }*/
 }
 
 @media (max-width: 800px) {
@@ -655,4 +699,23 @@ body {
 .blog-reviews {
   padding: 0;
 }
+/*MOBILE STYLES */
+/*.show-mobile-menu {
+    display: block;
+    float: right;
+    font-weight: bold;
+    margin-top: 1.5vh;
+    padding: 1.5em;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .header-nav {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    max-height: 1000px;
+  }  */
 }
