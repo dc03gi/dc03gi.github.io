@@ -30,9 +30,10 @@ layout: default
               <span> - {{ post.date | date: '%B %d, %Y '}}</span>
             </div>
           </header>
-          <div class="posts-image" style="background-image:url({{ post.hero }})">
-            {{ post.excerpt }}
+          <div class="posts-image" style="background-image:url({{ post.postHero }})">
           </div>
+          <div>
+            {{ post.excerpt }}
         </div>
       {% endfor %}
   </div>
